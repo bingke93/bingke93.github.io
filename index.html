@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 	<head>
 	  	<title>PORTFOLIO EXHIBITION</title>
@@ -8,12 +8,25 @@
 
 	  	<link rel="stylesheet" href="css/main.css" />
 	  	<link rel="stylesheet" href="css/videobg.css" />
+	  	<link rel="stylesheet" href="css/style.css" />
 	</head>
 	
 	<body>
 
 <!--		<img src="images/web_layout.jpg" id="img_refer" />-->
-		
+		<div id="load_bg">
+			<div id="load">
+			  <div>G</div>
+			  <div>N</div>
+			  <div>I</div>
+			  <div>D</div>
+			  <div>A</div>
+			  <div>O</div>
+			  <div>L</div>
+			</div>
+		</div>
+	
+
 
 		<div>
 			<img src="images/TAG.png" id="title_tag"/>
@@ -22,9 +35,12 @@
 		<div>
 			<div id="box_container">
 				<video autoplay loop muted="" preload id="img_bg">
-            		<source src="images/2.mp4">
-            		<source src="images/1.mp4">
+<!--            		<source src="images/final_movie.mov">-->
+				<source src="images/gif_loop_merge.mp4">
         		</video>
+<!--			<div>
+					<img src="images/bg_loop.gif" id="img_bg"/>
+				</div>-->
 			</div>
 		</div>
 
@@ -186,6 +202,16 @@
 
 <script type="text/javascript" src="js/script.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$(window).on('load', function(){
+		setTimeout(function(){
+        	$('#load_bg').hide();
+    	},5000); 
+		
+	})
+})
+</script>
 
 
 	</body>
