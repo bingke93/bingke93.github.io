@@ -1,7 +1,12 @@
 body{
 	font-family: Cindie2-L, Arial, sans-serif;
 	font-weight: 100;
+	width: 100%;
+	margin: 0;
+	min-width: 1440px;
+	position: relative;
 }
+
 @font-face {
 font-family: "Cindie2-L";
 src: url("../font/Cindie2-L.otf"),
@@ -9,9 +14,28 @@ url("../font/Cindie2-L.svg");
 }
 
 
+#load_gif{
+	position: fixed; 
+	display: block;
+	top:0; 
+	left: 0;
+	width: 100%; 
+	z-index: 99;
+	overflow: hidden;
+	min-width: 1100px;
+}
+
+#load_gif_img{
+	width: 100%;
+	overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
 #img_refer{
 	position: absolute; 
 	top:0; 
+	left: 0px;
 	width: 100%; 
 	height: auto; 
 	opacity: 0.3;
@@ -19,33 +43,42 @@ url("../font/Cindie2-L.svg");
 }
 
 
-
 #title_tag{
 	position: relative;
 	width: 100%;
+	min-width: 1100px;
 /*	height: 110px;
 	margin-top: -6px;
 	right: -2px;*/
 }
 
 
+
+/*title*/
 #band{
 	position: relative;
 	width: 100%; 
 }
 
 #band_img{
-	width: 100%;
-
+	width: 84%;
+	display: block;
+	margin: 65px auto;
 }
+/*end_title*/
 
+
+
+
+/*main_content*/
 #lay_pack{
 	position: relative;
-	width: 1100px;
-	margin: 0 auto;
+	width: 100%;
+	margin-top: -27px;
 	overflow: hidden;
-	background-color: white;
+/*	background-color: white;*/
 	z-index: 20;
+	min-width: 1440px;
 }
 
 /*#img_refer{
@@ -78,9 +111,10 @@ url("../font/Cindie2-L.svg");
 	background-size: cover;
 }*/
 
-#div1{
+#div_line1{
 	position: relative;
-	margin-top: 37px;
+	height: 831px;
+	display: block;
 }
 
 .border{
@@ -93,78 +127,80 @@ url("../font/Cindie2-L.svg");
 	border: 2px solid #999;
 	border-radius: 100px;
 	height: 118px;
-	width: 97%;
-	margin-left: 1.5%;
+	width: 38%;
+	left: 181px;
+	top: -54px;
+	z-index: 20;
 }
 
 #well_1{
 	position: relative;
-	margin: 20px 0 33px 5%;
-	width: 5% !important;
+	margin: 25px 0 -17px 17px;
+	width: 9% !important;
 	height: auto;
+	display: inline-block;
 }
 
-#text_everyone{
+#text_plas_bag{
 	position: relative;
 	display: inline-block !important;
-	margin-top: 38px;
-	margin-left: 0;
-	padding: 27px 20px 22px 33px;
-	font-size: 52px;
+	top: 35px;
+	left: 0;
+	margin: 26px 20px 0px 17px;
+	font-size: 69px;
 }
 
-#text_artist{
+#img_plas_bag{
 	position: relative;
-	display: inline-block !important;
-	margin-left: 17%;
-	font-size: 54px;
-	font-weight: bold;
-	padding: 27px 30px 22px 20px;
-}
-
-#img_sticker{
-	position: relative;
-	display: block;
-	margin-left: 52%;
-	width: 31% !important;
-	margin-top: -233px;
+	display: inline-block;
+	left: 8%;
+	width: 26.5% !important;
+	top: -227px;
 	height: auto;
+	z-index: 10;
 }
+
+
+
+
 
 #border2{
 	position: relative;
+	display: inline-block;
 	border: 2px solid #999;
 	border-radius: 100px;
-	height: 83px;
-	width: 35%;
-	margin-left: 59%;
-	margin-top: -102px;
+	height: 98px;
+	width: 22.5%;
+	left: 10%;
+	top: -501px;
+	z-index: 20;
 }
 
-#text_anything{
+#well_2{
 	position: relative;
-	display: block;
-	margin-top: -87px;
-	font-size: 49px;
-	font-weight: bold;
-	margin-left: 59%;
-	padding: 11px 20px 11px 93px;
-	width: 25%;
-}
-
-#icon_comma{
-	position: relative;
-	display: block;
-	margin-left: 24%;
-	width: 4% !important;
-	margin-top: -148px;
+	margin: 20px 0 20px 5px;
+	width: 21% !important;
 	height: auto;
+	display: inline-block;
+	left: -150px;
 }
 
-#div2{
+#text_cup{
 	position: relative;
-	width: 100%;
-	margin-top: 65px;
+	left: -89px;
+	font-size: 64px;
+	font-weight: bold;
+	display: inline-block;
+/*	transform: translatex(-50%);*/
+}
+
+#img_cup{
+	position: relative;
+	left: 38%;
+	width: 32%;
+	bottom: 564px;
+	display: inline-block;
+	z-index: 10;
 }
 
 #border3{
@@ -172,324 +208,178 @@ url("../font/Cindie2-L.svg");
 	display: inline-block;
 	border: 2px solid #999;
 	border-radius: 100px;
-	height: 77px;
-	width: 29.5%;
-	margin-left: 9.5%;
-}
-
-#well_2{
-	position: relative;
-	margin: 20px 0 20px 5%;
-	width: 4% !important;
-	height: auto;
-}
-
-#text_plastic{
-	position: relative;
-	padding: 16px 10px 7px 10px;
-	font-size: 42px;
-	font-weight: bold;
-	width: 34%;
-	margin-left: 2%;
-	display: inline-block;
-/*	transform: translatex(-50%);*/
-}
-
-
-#img_plastic{
-	position: relative;
-	margin-left: 15%;
-	width: 19%;
-	margin-top: -70px;
-	height: auto;
-}
-
-#border4{
-	position: relative;
-	border: 2px solid #999;
-	border-radius: 100px;
-	height: 81px;
-	width: 22.5%;
-	margin-left: 55%;
-	margin-top: -240px;
+	height: 86px;
+	width: 20.5%;
+	left: 566px;
+	top: -1322px;
+	z-index: 20;
 }
 
 #well_3{
 	position: relative;
-	margin-left: 56.5%;
-	width: 4% !important;
+	width: 14% !important;
 	height: auto;
-	margin-top: -68px;
-	display: block;
 }
 
 #text_bottle{
 	position: relative;
-	margin-top: -60px;
-	margin-left: 59.5%;
-	font-size: 48px;
+	font-size: 65px;
 	font-weight: bold;
-	padding: 10px 10px 7px 26px;
-	width: 23%;
-/*	transform: translatex(-50%);*/
+	top: 15px;
+	display: inline-block;
 }
+
 
 #img_bottle{
 	position: relative;
-	margin-left: 63%;
-	width: 7.5%;
-	margin-top: -53px;
+	display: inline-block;
+	left: 1027px;
+	top: -1333px;
+	width: 21.5%;
+	margin-top: -70px;
 	height: auto;
+	z-index: 10;
 }
 
-#icon_semi{
-	position: relative;
-	display: block;
-	margin-left: 92%;
-	width: 4% !important;
-	margin-top: -185px;
-	height: auto;
-}
 
-#icon_quote{
-	position: relative;
-	display: block;
-	margin-left: 0;
-	width: 5% !important;
-	margin-top: 66px;
-	height: auto;
-}
 
-#div3{
+
+#div_line2{
 	position: relative;
 	width: 100%;
-	padding-top: 59px;
+	margin-top: 71px;
+	display: block;
+	height: 591px;
+}
+
+#border4{
+	position: relative;
+	display: inline-block;
+	border: 2px solid #999;
+	border-radius: 100px;
+	height: 110px;
+	width: 22.5%;
+	left: 312px;
+	top: -607px;
 	z-index: 20;
 }
 
+#well_4{
+	position: relative;
+	left: 40px;
+	width: 19% !important;
+	height: auto;
+	top: 76px;
+	display: inline-block;
+}
+
+#text_bulb{
+	position: relative;
+	display: inline-block;
+	top: 100px;
+	left: 61px;
+	font-size: 65px;
+	font-weight: bold;
+/*	transform: translatex(-50%);*/
+}
+
+#img_bulb{
+	position: relative;
+	display: inline-block;
+	left: -503px;
+	width: 27%;
+	top: -239px;
+	height: auto;
+	z-index: 10;
+}
+
+
+
+
+#img_chair{
+	position: relative;
+	display: inline-block;
+	left: 44%;
+	width: 32.5%;
+	top: -922px;
+	height: auto;
+	z-index: 10;
+}
 #border5{
 	position: relative;
 	display: inline-block;
 	border: 2px solid #999;
 	border-radius: 100px;
-	height: 78px;
-	width: 31.5%;
-	margin-left: 65.5%;
+	height: 84px;
+	width: 23%;
+	left: 36%;
+	top: -1484px;
+	z-index: 20;
 }
-
-#and_1{
-	position: relative;
-	margin-left: 61%;
-	width: 4% !important;
-	height: auto;
-	margin-top: -68px;
-	display: inline-block;
-	padding: 12px 0 19px 0;
-}
-
-
-#text_everything{
-	position: relative;
-	margin-top: 13px;
-	margin-left: 1%;
-	font-size: 47px;
-	font-weight: bold;
-	padding: 12px 0 2px 5px;
-	display: inline-block;
-}
-
-#border6{
-	position: relative;
-	display: inline-block;
-	border: 2px solid #999;
-	border-radius: 100px;
-	height: 82px;
-	width: 17.5%;
-	margin-left: 18%;
-	margin-top: -43px;
-}
-
-#well_4{
-	position: relative;
-	margin-left: 20.5%;
-	width: 4% !important;
-	height: auto;
-	margin-top: -77px;
-	display: inline-block;
-	padding: 5px 0 16px 0;
-}
-
-#text_cup{
-	position: relative;
-	margin-top: -44px;
-	margin-left: -1.5%;
-	font-size: 48px;
-	font-weight: bold;
-	padding: 10px 0 3px 36px;
-	width: 14.5%;
-	display: inline-block;
-/*	transform: translatex(-50%);*/
-}
-
-#img_mug{
-	position: relative;
-	margin-left: 23.5%;
-	width: 20%;
-	margin-top: -25px;
-	height: auto;
-}
-
-#img_chair{
-	position: relative;
-	margin-left: 68.5%;
-	width: 17%;
-	margin-top: -192px;
-	height: auto;
-}
-
-#border7{
-	position: relative;
-	border: 2px solid #999;
-	border-radius: 100px;
-	height: 85px;
-	width: 35.5%;
-	margin-left: 54.5%;
-	margin-top: -190px;
-}
-
-#well_5{
-	position: relative;
-	margin-left: 52.5%;
-	width: 4% !important;
-	height: auto;
-	margin-top: -72px;
-	display: inline-block;
-}
-
 #text_chair{
 	position: relative;
-	margin-top: -191px;
-	margin-left: 57%;
-	font-size: 49px;
+	top: 13px;
+	font-size: 64px;
 	font-weight: bold;
-	padding: 10px 43px 10px 2px;
-	width: 33%;
 	display: inline-block;
 }
-
-#div4{
+#well_5{
 	position: relative;
-	width: 100%;
-	height: 260px;
-/*	overflow: hidden;*/
-	z-index: 20;
-	margin-top: 3px;
-}
-
-#img_phone{
-	position: relative;
-	margin-left: 3%;
-	width: 13.5%;
+	left: 3.5%;
+	width: 17% !important;
 	height: auto;
-}
-
-#border8{
-	position: relative;
-	border: 2px solid #999;
-	border-radius: 100px;
-	height: 81px;
-	width: 20%;
-	margin-left: 6.5%;
-	margin-top: -220px;
-}
-
-#well_6{
-	position: relative;
-	margin-left: 0.5%;
-	width: 4% !important;
-	height: auto;
-	margin-top: -68px;
+	top: -5px;
 	display: inline-block;
-	padding: 5px 0 18px 0;
-	z-index: -5;
 }
+/*end_main_content*/
 
-#text_phone{
-	position: relative;
-	margin-top: -221px;
-	margin-left: 10.5%;
-	font-size: 48px;
-	font-weight: bold;
-	padding: 9px 0 5px 20px;
-	width: 20%;
-	display: inline-block;
-/*	transform: translatex(-50%);*/
-}
+
+
 
 
 #upload{
 	position: relative;
-	width: 71.5%;
-	margin-left: 25%;
-	margin-top: -109px;
-	z-index: 25;
+	display: block;
+	margin: -191px auto;
+	width: 84%;
+	z-index: 20;
+	height: 355px;
 }
 
-#fix_rotate{
+#click{
+	display: block;
+	position: relative;
+	margin: 268px auto;
+	width: 70%;
+	min-width: 1000px;
+}
+
+#click_word{
+	background-color: black;
+	color: white;
+	font-size: 57px;
+	border: 2px solid #999;
+	border-radius: 100px;
+	padding: 22px 17%;
+}
+
+/*#fix_rotate{
 	position: fixed;
 	bottom: 250px;
 	left: -170px;
 	font-size: 20px;
 	z-index: 1;
 	transform: rotate(-90deg);
-}
+}*/
 
 /*foot*/
 .home_foot{
 	width:100%;
-	height:300px;
 	margin:0 auto;
 	background-color:#0b0a0a;
-}
-.foot_group{
-	margin:20px auto;
-	width:1200px;
-	height:227px;
-}
-.foot_group div{
-	display:inline-block;
-	width:23%;
-	padding:36px;
-	vertical-align: top;
-	margin-left:45px;
-	height:227px;
-}
-.foot_title{
-	color:#fff;
-	font-size:23px;
-	margin-bottom:15px;
-}
-.foot_detail{
-	color:#8f8e91;
-	font-size:15px;
-	line-height: 25px;
-}
-.foot_web{
-	text-decoration: none;
-	color:#8f8e91;
-	font-size:15px;
-	line-height:25px;
-	display:block;
-}
-.foot_group img{
-	display:inline-block;
-	width:25px;
-	margin-right:2px;
-}
-.foot_designer{
-	text-align:center;
-	color:#8f8e91;
-	font-size:15px;
+	display: block;
+	position: relative;
+	margin-top: -178px;
 }
 /*foot*/
 
