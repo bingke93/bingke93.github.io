@@ -1,0 +1,31 @@
+#detail_layout{
+	width: 100%; 
+	height: auto; 
+}
+
+
+#click_4{
+	display: block;
+	position: relative;
+	margin: -927px auto;
+	width: 56%;
+	min-width: 800px;
+}
+
+#click_word_4{
+	background-color: black;
+	color: white;
+	font-size: 57px;
+	border: 2px solid #999;
+	border-radius: 100px;
+	padding: 22px 9%;
+}
+
+#click_word_4.hover{
+	background-color: white;
+	color: black;
+	font-size: 57px;
+	border: 2px solid #999;
+	border-radius: 100px;
+	padding: 22px 9%;
+}
