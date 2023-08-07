@@ -142,7 +142,10 @@
 				$container.find( 'span.clickme' ).on( 'click', function() {
 
 					pfold.unfold();
-					$('.demo-2').removeClass('hide');
+					setTimeout(function() {
+						$('.demo-2').removeClass('hide');
+					},1500);
+		//			$('.demo-2').removeClass('hide');
 
 				} ).end().find( 'span.close' ).on( 'click', function() {
 
