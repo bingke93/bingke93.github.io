@@ -9,14 +9,14 @@
         <meta name="keywords" content="css3, experiment, 3d, unfolding, fold, paper, component, element, web design, jquery, plugin, perspective" />
         <meta name="author" content="Blake" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="resource/css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/pfold.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/custom1.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/custom2.css" />
-		<script type="text/javascript" src="resource/js/modernizr.js"></script> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom1.css" />
+        <link rel="stylesheet" type="text/css" href="css/customed.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
 		<style>
-			body { background: url(resource/images/bg.jpg); }
+			body { background: url(images/bg.jpg); }
 			.container > header h1 {
 			    color: #fff;
 			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
@@ -53,7 +53,64 @@
 					<div class="uc-final-content">
 						<!-- custom content -->
 						<div class="scrollwrap">
-							<img id="map_overall" src="resource/images/map_overall.png"/>
+							<img id="map_overall" src="images/map_overall.png"/>
+							
+							<div id="grid">
+								<div class="uc-c">
+									<div class="map_section" id="map_1">
+										<img src="images/1.png"/>
+										<span class="icon-eye"></span>
+									</div>
+
+									<div>
+										<img src="images/large/2.jpg" alt="image02-large" />
+										<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
+										<span class="icon-cancel"></span>
+									</div>
+								</div>
+								
+								
+								<div class="uc-container">
+									<div class="map_section" id="map_2">
+										<img src="images/2.png"/>
+										<span class="icon-eye"></span>
+									</div>
+
+									<div class="uc-final-content">
+										<img src="images/large/2.jpg" alt="image02-large" />
+										<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
+										<span class="icon-cancel"></span>
+									</div>
+								</div>
+								
+								<div class="uc-container">
+									<div class="map_section" id="map_3">
+										<img src="images/3.png"/>
+										<span class="icon-eye"></span>
+									</div>
+
+									<div class="uc-final-content">
+										<img src="images/large/2.jpg" alt="image02-large" />
+										<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
+										<span class="icon-cancel"></span>
+									</div>
+								</div>
+								
+								<div class="uc-container">
+									<div class="map_section" id="map_4">
+										<img src="images/4.png"/>
+										<span class="icon-eye"></span>
+									</div>
+
+									<div class="uc-final-content">
+										<img src="images/large/2.jpg" alt="image02-large" />
+										<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
+										<span class="icon-cancel"></span>
+									</div>
+								</div>
+							</div>
+							
+							
 						</div>
 						<span class="close">x</span>
 					</div>
@@ -61,66 +118,9 @@
 				<p class="info"><strong>Descriptions:</strong> Done by Blake!</p>
 			</section>
 
-			<section class="main demo-2 hide">
-				<div id="grid" class="grid clearfix">
-
-					<div id="map_1" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/1.png" alt="image01" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/1.jpg" alt="image01-large" />
-							<div class="title"><h4>The Professor</h4> by Dan Matutina <a href="http://drbl.in/dMLS" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
-
-					<div id="map_2" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/2.png" alt="image02" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/2.jpg" alt="image02-large" />
-							<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
-
-					<div id="map_3" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/3.png" alt="image03" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/3.jpg" alt="image03-large" />
-							<div class="title"><h4>Angry Nerd Blofeld</h4> by Dan Matutina <a href="http://drbl.in/eLEa" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
-
-					<div id="map_4" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/4.png" alt="image04" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/4.jpg" alt="image04-large" />
-							<div class="title"><h4>Ero Senin</h4> by Dan Matutina <a href="http://drbl.in/dJfK" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
-
-				</div><!-- / grid -->
-			</section>
-							
-							
-						
-
 		</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="resource/js/jquery.pfold.js"></script>
+		<script type="text/javascript" src="js/jquery.pfold.js"></script>
 		<script type="text/javascript">
 			$(function() {
 
@@ -131,29 +131,21 @@
 						folddirection : ['left','bottom','right']
 					});
 
-		/*		$(".clickme").click(function() {
-				    $('.demo-2').removeClass('hide');
-				}); */
-
 				$container.find( 'span.clickme' ).on( 'click', function() {
 
 					pfold.unfold();
-					$('.demo-2').removeClass('hide');
 
 				} ).end().find( 'span.close' ).on( 'click', function() {
 
 					pfold.fold();
-					$('.demo-2').addClass('hide');
 
 				} );
 
 				
-
-
 				// say we want to have only one item opened at one moment
 				var opened = false;
 
-				$( '#grid > div.uc-container' ).each( function( i ) {
+				$( '#grid > div.uc-c' ).each( function( i ) {
 
 					var $item = $( this ), direction;
 
