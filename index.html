@@ -1,200 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>A Walking Map</title>
-        <meta name="description" content="A Walking Map" />
-        <meta name="keywords" content="css3, experiment, 3d, unfolding, fold, paper, component, element, web design, jquery, plugin, perspective" />
-        <meta name="author" content="Blake" />
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Binke_Profolio</title>
+    <meta name="description" content="Binke_Profolio" />
+    <meta name="author" content="Blake" />
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="resource/js/modernizr.js"></script> 
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="resource/css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/pfold.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/custom1.css" />
-        <link rel="stylesheet" type="text/css" href="resource/css/custom2.css" />
-		
-		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
-		<style>
-			body { background: url(resource/images/bg.jpg); }
-			.container > header h1 {
-			    color: #fff;
-			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-			}
+    <link rel="stylesheet" type="text/css" href="css/index_main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Podkova:wght@700&display=swap" rel="stylesheet">
+	
+</head>
 
-			.container > header h2,
-			p.info  {
-			    color: #4e2f1d;
-			    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
-			}
-		</style>
-    </head>
-    <body>
-        <div class="container">
-			
-			<header>
-			
-				<h1><strong>A Walking Map</strong></h1>
-				
-				<div class="support-note"><!-- let's check browser support with modernizr -->
-					<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
-					<span class="note-ie">Sorry, only modern browsers.</span>
-				</div>
-				
-			</header>
-			
-			<section class="main demo-1">
-				
-				<div id="uc-container" class="uc-container">
-					<div class="uc-initial-content">
-						<!-- custom content -->
-						<span class="clickme">Click me</span>
-					</div>
-					<div class="uc-final-content">
-						<!-- custom content -->
-						<div class="scrollwrap">
-							<img id="map_overall" src="resource/images/map_overall.png"/>
-						</div>
-						<span class="close">x</span>
-					</div>
-				</div>
-				<p class="info"><strong>Descriptions:</strong> Done by Blake!</p>
-			</section>
+<body>
+    <section>
 
-			<section class="main demo-2 hide">
-				<div id="grid" class="grid clearfix">
+		<h1>Binke's Project Portfolio</h1>
 
-					<div id="map_1" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/1.png" alt="image01" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/1.jpg" alt="image01-large" />
-							<div class="title"><h4>The Professor</h4> by Dan Matutina <a href="http://drbl.in/dMLS" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
+		<div class="candidates">
 
-					<div id="map_2" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/2.png" alt="image02" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/2.jpg" alt="image02-large" />
-							<div class="title"><h4>Planet</h4> by Dan Matutina <a href="http://drbl.in/eZoL" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
+			<!-- Candidate 1 -->
+			<div class="candidate">
+				<h2 class="name">Project 1</h2>
+				<img src="images/package.png" alt="project1:NFT ART" class="intro_img" />
+				<p class="roles">
+					<span class="tag ui">NFT</span><span class="tag ux">WEBSITE</span>
+				</p>
+				<p class="bio">
+				  A project that explores and guides the reader to think about the relationship between the inflated prices of NFT artworks and their actual value. Culminating in an interactive website.
+				</p>
+				<ul class="social">
+					<li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+					<li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+					<li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+				</ul>
+				<a href="project1.html" class="btn">MORE</a>
+			</div>
 
-					<div id="map_3" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/3.png" alt="image03" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/3.jpg" alt="image03-large" />
-							<div class="title"><h4>Angry Nerd Blofeld</h4> by Dan Matutina <a href="http://drbl.in/eLEa" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
+			<!-- Candidate 2 -->
+			<div class="candidate">
+				<h2 class="name">PROJECT 3</h2>
+				<img src="resource/images/1.png" alt="project3:Typographic Psychogeography" class="intro_img" />
+				<p class="roles"><span class="tag ux">Typographic Psychogeography</span></p>
+				<p class="bio">
+					TYPOGRAPHY and PSYCHOGEOGRAPHY were used to design walking routes with themed words on a map, exploring everyday elements along the way. The final presentation is in the form of a publication.
+				</p>
+				<ul class="social">
+					<li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+					<li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+					<li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+				</ul>
+				<a href="project3.html" class="btn">MORE</a>
+			</div>
 
-					<div id="map_4" class="uc-container map_section">
-						<div class="uc-initial-content">
-							<img src="resource/images/4.png" alt="image04" />
-							<span class="icon-eye"></span>
-						</div>
-						<div class="uc-final-content">
-							<img src="resource/images/large/4.jpg" alt="image04-large" />
-							<div class="title"><h4>Ero Senin</h4> by Dan Matutina <a href="http://drbl.in/dJfK" class="icon-link"></a></div>
-							<span class="icon-cancel"></span>
-						</div>
-					</div><!-- / uc-container -->
+			<!-- Candidate 3 -->
+<!--			<div class="candidate">
+			<h2 class="name">David Watson</h2>
+			<img src="https://i.postimg.cc/RFJL74sH/raymond.jpg" alt="david">
+			<p class="roles">
+			  <span class="tag ui">UI Design</span><span class="tag ux">UX Design</span>
+			</p>
+			<p class="bio">
+			  Eget nulla pulvinar arcu pellentesque ipsum at id dapibus
+			  vestibulum egestas sodales nec nulla nunc interdum posuere aliquet.
+			</p>
+			<ul class="social">
+			  <li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+			  <li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+			  <li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+			</ul>
+			<a href="#" class="btn">Hire</a>
+			</div>    -->
 
-				</div><!-- / grid -->
-			</section>
-							
-							
-						
+			<!-- Candidate 4 -->
+<!--			<div class="candidate">
+			<h2 class="name">Winston Millington</h2>
+			<img src="https://i.postimg.cc/8CjRGTV0/winston.jpg" alt="winston">
+			<p class="roles">
+			  <span class="tag ui">UI Design</span><span class="tag dev">Developer</span>
+			</p>
+			<p class="bio">
+			  Ante risus gravida vitae aliquet tristique libero, at blandit volutpat, viverra.
+			</p>
+			<ul class="social">
+			  <li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+			  <li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+			  <li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+			</ul>
+			<a href="#" class="btn">Hire</a>
+			</div>     -->
+
+			<!-- Candidate 5 -->
+<!--			<div class="candidate">
+			<h2 class="name">Alex Miller</h2>
+			<img src="https://i.postimg.cc/KYwnvCGv/alex.jpg" alt="alex">
+			<p class="roles"><span class="tag ux">UX Design</span></p>
+			<p class="bio">Amet magna amet venenatis purus donec eget ultricies urna.</p>
+			<ul class="social">
+			  <li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+			  <li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+			  <li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+			</ul>
+			<a href="#" class="btn">Hire</a>
+			</div>      -->
+
+			<!-- Candidate 6 -->
+<!--			<div class="candidate">
+			<h2 class="name">Raymond Smith</h2>
+			<img src="https://i.postimg.cc/RFJL74sH/raymond.jpg" alt="raymond">
+			<p class="roles"><span class="tag ui">UI Design</span></p>
+			<p class="bio">
+			  Tincidunt urna eu posuere lobortis cursus neque quam nulla
+			  fringilla pellentesque egestas sem libero aliquam commodo
+			</p>
+			<ul class="social">
+			  <li><a aria-label="dribbble" href="#"><img src="https://i.postimg.cc/NMWFXwSL/dribbble.png"></a></li>
+			  <li><a aria-label="twitter" href="#"><img src="https://i.postimg.cc/V6S55N73/twitter.png"></a></li>
+			  <li><a aria-label="instagram" href="#"><img src="https://i.postimg.cc/8c0Ft67k/instagram.png"></a></li>
+			</ul>
+			<a href="#" class="btn">Hire</a>
+			</div>      -->
 
 		</div>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="resource/js/jquery.pfold.js"></script>
-		<script type="text/javascript">
-			$(function() {
 
-				var $container = $( '#uc-container' ),
-					pfold = $( '#uc-container' ).pfold({
-						easing : 'ease-in-out',
-						folds : 3,
-						folddirection : ['left','bottom','right']
-					});
-
-		/*		$(".clickme").click(function() {
-				    $('.demo-2').removeClass('hide');
-				}); */
-
-				$container.find( 'span.clickme' ).on( 'click', function() {
-
-					pfold.unfold();
-					setTimeout(function() {
-						$('.demo-2').removeClass('hide');
-					},1500);
-		//			$('.demo-2').removeClass('hide');
-
-				} ).end().find( 'span.close' ).on( 'click', function() {
-
-					pfold.fold();
-					$('.demo-2').addClass('hide');
-
-				} );
-
-				
-
-
-				// say we want to have only one item opened at one moment
-				var opened = false;
-
-				$( '#grid > div.uc-container' ).each( function( i ) {
-
-					var $item = $( this ), direction;
-
-					switch( i ) {
-						case 0 : direction = ['right','bottom']; break;
-						case 1 : direction = ['left','bottom']; break;
-						case 2 : direction = ['right','top']; break;
-						case 3 : direction = ['left','top']; break;
-					}
-					
-					var pfold = $item.pfold( {
-						folddirection : direction,
-						speed : 300,
-						onEndFolding : function() { opened = false; },
-						centered : true
-					} );
-
-					$item.find( 'span.icon-eye' ).on( 'click', function() {
-
-						if( !opened ) {
-							opened = true;
-							pfold.unfold();
-						}
-
-
-					} ).end().find( 'span.icon-cancel' ).on( 'click', function() {
-
-						pfold.fold();
-
-					} );
-
-				} );
-				
-			});
-		</script>
-    </body>
+	</section>
+</body>
 </html>

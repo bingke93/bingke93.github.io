@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- Below list all the information customized -->
+    <title>A Walking Map</title>
+    <meta name="description" content="A Walking Map" />
+    <meta name="keywords" content="css3, experiment, 3d, unfolding, fold, paper, component, element, web design, jquery, plugin, perspective" />
+    <meta name="author" content="Blake" />
+    
+    <!-- The link below assures the insecure requests -->
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!-- Below list all the js&css customized -->
+	<script type="text/javascript" src="resource/js/modernizr.js"></script> 
+	<script type="text/javascript" src="resource/js/pfold.js"></script>
+    <link rel="stylesheet" type="text/css" href="resource/css/map_overall.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/part1.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/part2.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/part3.css" />
+    <link rel="stylesheet" type="text/css" href="resource/css/pfold.css" />
+
+	
+	<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+	
+	<style>
+		body { background: url(resource/images/bg.jpg); }
+		.container > header h1 {
+		    color: #fff;
+		    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+		}
+
+		.container > header h2,
+		p.info  {
+		    color: #4e2f1d;
+		    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+		}
+	</style>
+</head>
+
+
+<body>
+
+	<!-- PART1 + PART2 : all the folded parts -->
+    <div class="container">
+		
+
+		<!-- Set the main TITLE, check the browser -->
+		<header>
+			<h1><a href="index.html"><strong>A Walking Map</strong></a></h1>
+			<p class="info"><strong>Descriptions:</strong> Done by Blake!</p>
+			<div class="support-note"><!-- let's check browser support with modernizr -->
+				<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+				<span class="note-ie">Sorry, only modern browsers.</span>
+			</div>
+		</header>
+		<!--  END Set the main TITLE, check the browser -->
+
+
+		<!-- PART1: The outside cover, a click to fold and unfold -->
+		<section class="main demo-1">
+			<div id="uc-container" class="uc-container">
+
+				<!-- Original Phase -->
+				<div class="uc-initial-content">
+					<!-- custom content -->
+					<span class="clickme">Click me</span>
+				</div>
+				<!-- END Original Phase -->
+
+				<!-- Folded Phase -->
+				<div class="uc-final-content">
+					<!-- custom content -->
+					<div class="scrollwrap">
+						<img id="map_overall" src="resource/images/map_overall.png"/>
+					</div>
+					<span class="close">x</span>
+				</div>
+				<!-- END Folded Phase -->
+
+			</div>
+			
+		</section>
+		<!-- END PART1: The outside cover, a click to fold and unfold -->
+
+
+		<!-- PART2: 5 sections show up above the unfoled map cover, a click to fold and unfold to see experimental images within each section -->
+		<section class="main demo-1 demo-2 hide" id="hide_section">
+
+			<!-- SECTION1: Routine -->	
+			<div id="map_1" class="uc-container map_section">
+
+				<!-- Original Phase -->
+				<div class="uc-initial-content initial_bg" id="map_1_initial">
+					<img src="resource/images/1.png" alt="image01" />
+					<span class="icon-eye"></span>
+				</div>
+				<!-- END Original Phase -->
+
+				<!-- Folded Phase -->
+				<div class="uc-final-content expand_box">
+					<div class="scrollwrap">
+						<img src="resource/images/large/1.jpg" alt="image01-large"/>
+						<div class="title"><h4>The Professor</h4> by Dan Matutina <span class="icon-link" id="link_1"></span></div>
+					</div>	
+					<span class="close">x</span>
+				</div>
+				<!-- END Folded Phase -->
+
+			</div><!-- / uc-container -->
+			<!-- END SECTION1: Routine -->	
+
+			<!-- SECTION2: Experiment -->
+			<div id="map_2" class="uc-container map_section">
+
+				<!-- Original Phase -->
+				<div class="uc-initial-content initial_bg" id="map_2_initial">
+					<img src="resource/images/2.png" alt="image02" />
+					<span class="icon-eye"></span>
+				</div>
+				<!-- END Original Phase -->
+
+				<!-- Folded Phase -->
+				<div class="uc-final-content expand_box">
+					<div class="scrollwrap">
+						<img src="resource/images/large/2.jpg" alt="image02-large" />
+						<div class="title"><h4>Planet</h4> by Dan Matutina <span class="icon-link" id="link_2"></span></div>
+					</div>
+					<span class="close">x</span>
+				</div>
+				<!-- END Folded Phase -->
+
+			</div><!-- / uc-container -->
+			<!-- END SECTION2: Experiment -->
+
+			<!-- SECTION3: Derive -->
+			<div id="map_3" class="uc-container map_section">
+
+				<!-- Original Phase -->
+				<div class="uc-initial-content initial_bg" id="map_3_initial">
+					<img src="resource/images/3.png" alt="image03" />
+					<span class="icon-eye"></span>
+				</div>
+				<!-- END Original Phase -->
+
+				<!-- Folded Phase -->
+				<div class="uc-final-content expand_box">
+					<div class="scrollwrap">
+						<img src="resource/images/large/3.jpg" alt="image03-large" />
+						<div class="title"><h4>Angry Nerd Blofeld</h4> by Dan Matutina <span class="icon-link" id="link_3"></span></div>
+					</div>
+					<span class="close">x</span>
+				</div>
+				<!-- END Folded Phase -->
+
+			</div><!-- / uc-container -->
+			<!-- END SECTION3: Derive -->
+
+			<!-- SECTION4: a guide to others -->
+			<div id="map_4" class="uc-container map_section">
+
+				<!-- Original Phase -->
+				<div class="uc-initial-content initial_bg" id="map_4_initial">
+					<img src="resource/images/4.png" alt="image04" />
+					<span class="icon-eye"></span>
+				</div>
+				<!-- END Original Phase -->
+
+				<!-- Folded Phase -->
+				<div class="uc-final-content expand_box">
+					<div class="scrollwrap">
+						<img src="resource/images/large/4.jpg" alt="image04-large" />
+						<div class="title"><h4>Ero Senin</h4> by Dan Matutina <span class="icon-link" id="link_4"></span></div>
+					</div>
+					<span class="close">x</span>
+				</div>
+				<!-- END Folded Phase -->
+
+			</div><!-- / uc-container -->
+			<!-- END SECTION4: a guide to others -->
+
+			<!-- SECTION5:  -->
+			<!-- END SECTION5:  -->
+
+		</section>
+		<!-- END PART2: 5 sections show up above the unfoled map cover, a click to fold and unfold to see experimental images within each section -->
+					
+	</div>
+	<!-- END PART1 + PART2 : all the folded parts -->
+
+
+<!-- PART3: Expand a certain image & show image collection -->
+	<div id="fix_all" class="hide">
+		<div id="container-1">
+			<img src="resource/images/large/1.jpg"  id="ori_img" class="container_small" alt="image1" />
+			<span class="xclose">x</span>
+
+			<!-- previous & next arrow -->
+			<div id="bg_roll">
+				<img src="resource/images/arrow_pre.png" class="arr_left" />
+				<img src="resource/images/arrow_ne.png" class="arr_next"  />
+			</div>
+			<!-- END previous & next arrow -->
+
+		</div>
+	</div>
+<!-- END PART3: Expand a certain image & show image collection -->
+
+
+<!-- Below list the js customized -->
+<script type="text/javascript" src="resource/js/main_function.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* Demo 2 */
+/* PART 2 */
 @font-face {
   font-family: 'entypo-selected';
   src: url("../font/entypo-selected.eot");
@@ -28,6 +28,10 @@
 .icon-search:before { content: '\5a'; } /* 'Z' */
 .icon-link:before { content: '\4c'; } /* 'L' */
 
+.hide {
+   display: none !important;
+}
+
 .demo-2 .grid {
     display: block;
     position: absolute;
@@ -35,6 +39,12 @@
     height: 600px;
     left: 22%;
     z-index: 199;
+}
+
+.demo-2 {
+    z-index: 199 !important;
+    width: 80% !important;
+    left: 7.2% !important;
 }
 
 .demo-2 .uc-container {
@@ -46,10 +56,62 @@
 
 .demo-2 .uc-single, 
 .demo-2 .uc-final,
-.demo-2 .uc-initial-content,
+.demo-2 .icon-eye,
 .demo-2 .uc-back,
 .demo-2 .uc-front {
     background: #29a6aa url(../images/noise.png) repeat top left;
+}
+
+.map_section {
+/*    display: block;
+    position: absolute;
+    width: 200px !important;
+    height: 150px !important;*/
+/*    overflow: hidden;*/
+    display: block;
+    position: absolute;
+}
+
+.map_section img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.map_section span {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.initial_bg{
+    position: absolute;
+    display: block;
+    height: 150px !important;
+    width: 200px !important;
+    overflow: hidden;
+    z-index: 199 !important;
+}
+
+#map_1 {
+    top: 23px !important;
+    left: 22.7% !important;
+}
+
+
+#map_2{
+    top: 23px !important;
+    left: 38% !important;
+}
+
+#map_3 {
+    top: 172px !important;
+    left: 32.5% !important;
+}
+
+#map_4 {
+    top: 285px !important;
+    left: 2% !important;
 }
 
 .demo-2 .icon-eye {
@@ -59,12 +121,12 @@
     text-indent: 4px;
     font-size: 60px;
     color: transparent;
-    color: rgba(255,255,255,0);
+    color: rgba(255,255,255,0) !important;
     width: 100%;
     height: 100%;
     line-height: 145px;
     text-align: center;
-    background: rgba(41,166,170,0);
+    background: rgba(41,166,170,0) !important;
     cursor: pointer;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -79,8 +141,9 @@
 }
 
 .no-touch .demo-2 .uc-initial-content:hover .icon-eye {
-    color: rgba(255,255,255,0.8);
-    background: rgba(41,166,170,0.7);
+    opacity: 1 !important;
+    color: rgba(255,255,255,0.8) !important;
+    background: rgba(41,166,170,0.7) !important;
 }
 
 .demo-2 .uc-initial-content img {
