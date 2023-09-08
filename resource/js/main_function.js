@@ -75,19 +75,6 @@ $(function() {
 
 	// Part3: click on "link" to see detailed information
 	$("#link_1").on( 'click', function() {
-<<<<<<< Updated upstream
-		$('#fix_all').fadeIn('slow');
-		$('#fix_all').removeClass('hide');
-		$("body").css("overflow", "hidden");
-    	$("#ori_img").animate({ position: "fixed", left: "0", top: "-43px", width: "100%" });
-    } );
-
-    $(".xclose").on( 'click', function() {
-		$("body").css("overflow", "auto");
-		$('#fix_all').fadeOut('slow');
-		setTimeout(function(){
-			$('#fix_all').addClass('hide');
-=======
 		$('#fix_all_1').fadeIn('slow');
 		$('#fix_all_1').removeClass('hide');
 		$("body").css("overflow", "hidden");
@@ -99,14 +86,11 @@ $(function() {
 		$('#fix_all_1').fadeOut('slow');
 		setTimeout(function(){
 			$('#fix_all_1').addClass('hide');
->>>>>>> Stashed changes
 		},1500);
     	
     } );
 
 
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -208,7 +192,6 @@ $(function() {
 
 
 
->>>>>>> Stashed changes
 	$(".arr_left").hover( function() {
 		$(this).attr("src", "resource/images/arrow_on_pre.png");
 	}, function() {
@@ -221,13 +204,6 @@ $(function() {
 		$(this).attr("src", "resource/images/arrow_ne.png");
 	});
 
-<<<<<<< Updated upstream
-	var imgCount_previous = 2;
-	var imgCount_next = -1
-	var images = ['resource/images/large/2.jpg', 'resource/images/large/3.jpg', 'resource/images/large/4.jpg'];
-
-	$(".arr_next").on( 'click', function() {
-=======
 
 
 
@@ -244,29 +220,18 @@ $(function() {
 
 
 	$("#arr_n_1").on( 'click', function() {
->>>>>>> Stashed changes
 		if (imgCount_next !== images.length -1)
 			imgCount_next++;
 		else
 			imgCount_next = 0;
-<<<<<<< Updated upstream
-		$("#ori_img").attr("src", images[imgCount_next]);
-	});
-
-	$(".arr_left").on( 'click', function() {
-=======
 		$("#ori_img_1").attr("src", images_1[imgCount_next]);
 	});
 
 	$("#arr_l_1").on( 'click', function() {
->>>>>>> Stashed changes
 		if (imgCount_previous !== 0)
 			imgCount_previous--;
 		else
 			imgCount_previous = 3;
-<<<<<<< Updated upstream
-		$("#ori_img").attr("src", images[imgCount_previous]);
-=======
 		$("#ori_img_1").attr("src", images_1[imgCount_previous]);
 	});
 
@@ -370,7 +335,6 @@ $(function() {
 		else
 			imgCount_previous = 3;
 		$("#ori_img_6").attr("src", images_6[imgCount_previous]);
->>>>>>> Stashed changes
 	});
 	// END PART3: click on "link" to see detailed information
 	
