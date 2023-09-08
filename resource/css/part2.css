@@ -45,11 +45,8 @@
     z-index: 199 !important;
     width: 80% !important;
     left: 7.2% !important;
-<<<<<<< Updated upstream
-=======
     padding: 6% 0 5% 28%;
     min-width: 930px;
->>>>>>> Stashed changes
 }
 
 .demo-2 .uc-container {
@@ -98,28 +95,6 @@
     z-index: 199 !important;
 }
 
-<<<<<<< Updated upstream
-#map_1 {
-    top: 23px !important;
-    left: 22.7% !important;
-}
-
-
-#map_2{
-    top: 23px !important;
-    left: 38% !important;
-}
-
-#map_3 {
-    top: 172px !important;
-    left: 32.5% !important;
-}
-
-#map_4 {
-    top: 285px !important;
-    left: 2% !important;
-}
-=======
 /*#map_1 {
     top: 23px !important;
     left: 22.7% !important;
@@ -140,7 +115,6 @@
     top: 285px !important;
     left: 2% !important;
 }*/
->>>>>>> Stashed changes
 
 .demo-2 .icon-eye {
     position: absolute;
