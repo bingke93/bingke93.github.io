@@ -8,7 +8,11 @@ body {
     height: 100%;
 }
 
+<<<<<<< Updated upstream
 #fix_all {
+=======
+.fix_all {
+>>>>>>> Stashed changes
     position: fixed;
     display: block;
     width: 100%;
@@ -20,7 +24,11 @@ body {
 }
 
 /* Lightbox container */
+<<<<<<< Updated upstream
 #container-1 {
+=======
+.container_fix {
+>>>>>>> Stashed changes
     position: fixed;
     display: block;
     width: 80%;
@@ -33,11 +41,19 @@ body {
     position: absolute;
     left: 24%;
     top: 0;
+<<<<<<< Updated upstream
     width: 400px;
     height: 580px;
 }
 
 #bg_roll {
+=======
+    width: auto;
+    height: 580px;
+}
+
+.bg_roll {
+>>>>>>> Stashed changes
     position: fixed;
     left: 0;
     top: 0;
