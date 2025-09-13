@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muxed Messages</title>
+  <style>
+    :root{
+      --page-max: 1060px;
+      --pad: 20px;
+      --gap: 20px;
+      --bg: #f7f7f7;
+      --soft: #efefef;
+      --ink: #111;
+      --sub: #5a5a5a;
+      --tag: #e9e9e9;
+      --radius: 14px;
+    }
+    html,body{
+      margin:0;padding:0;background:#fff;color:var(--ink);
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,"Helvetica Neue",Helvetica,sans-serif
+    }
+    .wrap{max-width:var(--page-max);margin:0 auto;padding:28px var(--pad) 72px}
+    header h1{font-size: clamp(28px, 4vw, 46px); margin: 4px 0 12px}
+    header .sub{color:var(--sub); font-size:14px;}
+
+    .hero{margin-top:28px;border-radius: var(--radius);overflow: hidden;box-shadow: 0 2px 18px rgba(0,0,0,.07);background: #000;}
+    .hero video{display:block; width:100%; height:auto;}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap);
+      margin-top: 28px;
+    }
+    @media (max-width: 860px){ .grid{ grid-template-columns: 1fr; } }
+
+    .mux-card{
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 1px 10px rgba(0,0,0,.06);
+      padding: 12px;
+    }
+    .mux-img{
+      background: var(--soft);
+      border-radius: 12px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      min-height: 200px;
+    }
+    .mux-img img{
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .audio-container{
+      padding: 10px 0 5px;
+    }
+    .play-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:8px;
+    }
+    .play-btn{
+      width:42px;height:42px;border-radius:50%;
+      background:#ff5500; display:flex;align-items:center;justify-content:center;
+      cursor:pointer; flex-shrink:0;
+    }
+    .play-btn::before{
+      content:""; display:block;
+      border-style:solid; border-width:8px 0 8px 14px; border-color:transparent transparent transparent #fff;
+      margin-left:3px;
+    }
+    .play-btn.playing::before{
+      width:14px;height:18px;border:none;background:#fff;
+      -webkit-mask: linear-gradient(90deg,#000 0 40%,transparent 40% 60%,#000 60% 100%);
+              mask: linear-gradient(90deg,#000 0 40%,transparent 40% 60%,#000 60% 100%);
+    }
+    .wave{width:100%;height:80px;}
+    .desc{margin-top: 34px;font-size: 17px;}
+    .desc p{margin:0 0 12px;}
+    .tags{margin-top: 14px;display:flex;flex-wrap: wrap;gap:10px;}
+    .tag{
+      padding: 6px 12px;
+      background: var(--tag);
+      border-radius: 999px;
+      font-size: 14px;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Muxed Messages</h1>
+      <div class="sub">A study in video / image / sound pairing</div>
+    </header>
+
+    <!-- 主视频 -->
+    <section class="hero">
+      <video src="images/video.MP4" controls playsinline preload="metadata" poster="images/有用5 高清.png"></video>
+    </section>
+
+    <!-- 音频+图像 -->
+    <section class="grid">
+      <!-- 卡片 1 -->
+      <article class="mux-card">
+        <div class="mux-img">
+          <img src="images/8.JPG" alt="图像 1" />
+        </div>
+        <div class="audio-container">
+          <div class="play-row">
+            <div class="play-btn" data-id="wave1"></div>
+            <div>
+              <div><strong>Blake</strong></div>
+              <div style="font-size:14px;color:#666">8月4日 电磁麦克风采集</div>
+            </div>
+          </div>
+          <div id="wave1" class="wave"></div>
+        </div>
+      </article>
+
+      <!-- 卡片 2 -->
+      <article class="mux-card">
+        <div class="mux-img">
+          <img src="images/10.JPG" alt="图像 2" />
+        </div>
+        <div class="audio-container">
+          <div class="play-row">
+            <div class="play-btn" data-id="wave2"></div>
+            <div>
+              <div><strong>Blake</strong></div>
+              <div style="font-size:14px;color:#666">8月5日 电磁麦克风采集</div>
+            </div>
+          </div>
+          <div id="wave2" class="wave"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <!-- 卡片 3 -->
+      <article class="mux-card">
+        <div class="mux-img">
+          <img src="images/G有用3.png" alt="图像 3" />
+        </div>
+        <div class="audio-container">
+          <div class="play-row">
+            <div class="play-btn" data-id="wave3"></div>
+            <div>
+              <div><strong>Blake</strong></div>
+              <div style="font-size:14px;color:#666">8月6日 地震式麦克风采集</div>
+            </div>
+          </div>
+          <div id="wave3" class="wave"></div>
+        </div>
+      </article>
+
+      <!-- 卡片 4 -->
+      <article class="mux-card">
+        <div class="mux-img">
+          <img src="images/有用6.png" alt="图像 4" />
+        </div>
+        <div class="audio-container">
+          <div class="play-row">
+            <div class="play-btn" data-id="wave4"></div>
+            <div>
+              <div><strong>Blake</strong></div>
+              <div style="font-size:14px;color:#666">8月4日 电磁麦克风采集</div>
+            </div>
+          </div>
+          <div id="wave4" class="wave"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 说明 -->
+    <section class="desc">
+      <p>
+        本页面复刻了 “Muxed Messages” 的视觉和听觉组合方式，每个卡片将图片与音频波形并置，营造沉浸式信息层叠体验。
+      </p>
+      <div class="tags">
+        <span class="tag">soundmapping</span>
+        <span class="tag">field recording</span>
+        <span class="tag">electromagnetic</span>
+        <span class="tag">geosensing</span>
+        <span class="tag">axis drift</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- 引入 Wavesurfer.js -->
+  <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
+  <script>
+    const files = [
+      "images/8月4电磁麦克风采集.WAV",
+      "images/8月5电磁麦克风采集.WAV",
+      "images/8月6地震式麦克风采集.WAV",
+      "images/8月4电磁麦克风采集.WAV"
+    ].map(encodeURI);  // ✅ 加上 URI 编码
+
+    files.forEach((file, idx) => {
+      const id = `wave${idx+1}`;
+      const wave = WaveSurfer.create({
+        container: `#${id}`,
+        waveColor: '#ccc',
+        progressColor: '#ff5500',
+        barWidth: 2,
+        height: 80,
+        url: file,
+        normalize: true
+      });
+      const btn = document.querySelector(`.play-btn[data-id="${id}"]`);
+      btn.addEventListener('click', () => {
+        wave.playPause();
+      });
+      wave.on('play',  () => btn.classList.add('playing'));
+      wave.on('pause', () => btn.classList.remove('playing'));
+      wave.on('finish',()=> btn.classList.remove('playing'));
+    });
+  </script>
+</body>
+</html>
