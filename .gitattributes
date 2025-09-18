@@ -1,2 +1,6 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 images/20250914\\[[:space:]]video_whole.mp4 filter=lfs diff=lfs merge=lfs -text
+images/0918_exhibition_construction.mp4 filter=lfs diff=lfs merge=lfs -text
+images/0918_field_experiments.mp4 filter=lfs diff=lfs merge=lfs -text
+images/final_video.mp4 filter=lfs diff=lfs merge=lfs -text
+0918_making_speaker.mp4 filter=lfs diff=lfs merge=lfs -text
